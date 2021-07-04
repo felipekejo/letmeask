@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ContainerButton = styled.button`
-  margin-top:64px;
+ 
   height:50px;
   border-radius:8px;
   font-weight:500;
@@ -20,7 +20,11 @@ export const ContainerButton = styled.button`
   img {
     margin-right:8px;
   }
-
+  &.outlined{
+    background:#fff;
+    border:1px solid #835afd;
+    color:#835afd;
+  }
   &:not(:disabled):hover {
     filter: brightness(0.9)
   }
