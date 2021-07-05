@@ -5,7 +5,7 @@
 <p align="center">
   <img src="https://img.shields.io/static/v1?label=NLW&message=06&color=8257E5&labelColor=000000" alt="NLW Together 06" />
 
-  <img src="https://img.shields.io/github/stars/rocketseat-education/nlw-06-reactjs?label=stars&message=MIT&color=8257E5&labelColor=000000" alt="Stars">
+  <img src="https://img.shields.io/github/stars/felipekejo/letmeask?label=stars&message=MIT&color=8257E5&labelColor=000000" alt="Stars">
 
   <img  src="https://img.shields.io/static/v1?label=license&message=MIT&color=8257E5&labelColor=000000" alt="License">   
 </p>
@@ -16,49 +16,48 @@
 
 <br>
 
-## 🧪 Tecnologias
+## 🧪 Technologies
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+This project was developed with the following technologies:
 
 - [React](https://reactjs.org)
 - [Firebase](https://firebase.google.com/)
 - [TypeScript](https://www.typescriptlang.org/)
 
-## 🚀 Como executar
+## 🚀 How to run the project
 
-Clone o projeto e acesse a pasta do mesmo.
+Clone the project and access its folder.
 
 ```bash
-$ git clone https://github.com/rocketseat-education/nlw-06-reactjs
-$ cd nlw-06-reactjs
+$ git clone https://github.com/felipekejo/letmeask.git
+$ cd letmeask
 ```
 
-Para iniciá-lo, siga os passos abaixo:
+To start it, follow the steps below:
 ```bash
-# Instalar as dependências
+# Install all the dependencies
 $ yarn
-# Iniciar o projeto
+# Start the project
 $ yarn start
 ```
-O app estará disponível no seu browser pelo endereço http://localhost:3000.
+The app will be available in your browser by address http://localhost:3000.
 
-Lembrando que será necessário criar uma conta no [Firebase](https://firebase.google.com/) e um projeto para disponibilizar um Realtime Database.
+Remembering that you will need to create an account on [Firebase](https://firebase.google.com/) and a project to provide a Realtime Database.
 
-## 💻 Projeto
+## 💻 Project
 
-Letmeask é perfeito para criadores de conteúdos poderem criar salas de Q&A com o seu público, de uma forma muito organizada e democrática. 
+Letmeask is perfect for content creators to create Q&A rooms with their audience in a very organized and democratic way.
 
-Este é um projeto desenvolvido durante a **[Next Level Week Together](https://nextlevelweek.com/)**, apresentada dos dias 20 a 27 de Junho de 2021.
+This is a project developed during the **[Next Level Week Together](https://nextlevelweek.com/)**, presented from the 20th to the 27th of June 2021.
 
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através do link abaixo:
+You can view the project layout through the link below:
 
 - [Layout Web](https://www.figma.com/file/u0BQK8rCf2KgzcukdRRCWh/Letmeask/duplicate) 
 
-Lembrando que você precisa ter uma conta no [Figma](http://figma.com/).
 
 ## 📝 License
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+This project is under the MIT license. See the [LICENSE](LICENSE.md) file for more details.
