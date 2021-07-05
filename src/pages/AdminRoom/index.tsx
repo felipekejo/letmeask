@@ -1,4 +1,4 @@
-import { Container, HeaderContent, MainContent, RoomTitle, QuestionList } from "./styles";
+import { Container, HeaderContent, MainContent, RoomTitle, QuestionList, LogOutButton } from "./styles";
 
 import logoImg from '../../assets/logo.svg'
 import deleteImg from '../../assets/delete.svg'
@@ -7,11 +7,11 @@ import answerImg from '../../assets/answer.svg'
 import { Button } from "../../components/Button";
 import { RoomCode } from "../../components/RoomCode";
 import { useHistory, useParams } from "react-router-dom";
-// import { useAuth } from "../../hooks/useAuth";
-
 import { Question } from "../../components/Question";
 import { useRoom } from "../../hooks/useRoom";
 import { database } from "../../services/firebase";
+import { useAuth } from "../../hooks/useAuth";
+import { RiLogoutCircleRLine } from 'react-icons/ri'
 
 
 
@@ -22,7 +22,7 @@ type RoomParams = {
 }
 
 export function AdminRoom() {
-  // const { user } = useAuth()
+  const { user, signOut } = useAuth()
   const params = useParams<RoomParams>()
   const roomId = params.id
   const history = useHistory()
@@ -62,6 +62,11 @@ export function AdminRoom() {
           <div>
             <RoomCode code={roomId} />
             <Button isOutlined onClick={() => handleEndRoom(roomId)}>Close room</Button>
+            {user && (
+              <LogOutButton type="button" onClick={signOut}>
+                <RiLogoutCircleRLine />
+              </LogOutButton>
+            )}
           </div>
 
         </HeaderContent>

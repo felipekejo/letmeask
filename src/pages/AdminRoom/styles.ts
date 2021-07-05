@@ -25,7 +25,23 @@ align-items:center;
   max-height:45px;
 }
 `
+export const LogOutButton = styled.button`
+  border:0;
+  background:transparent;
+  cursor: pointer;
+  display: flex;
+  align-items:center;
+  transition: filter 0.2s;
+  color:#835afd;
 
+  >svg{
+    height:24px;
+    width:24px;
+  }
+  &:hover{
+    filter: brightness(0.9)
+  }
+`
 export const MainContent = styled.main`
 max-width:800px;
 margin:0 auto;

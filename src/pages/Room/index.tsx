@@ -1,4 +1,4 @@
-import { Container, HeaderContent, MainContent, RoomTitle, FormFooter, UserInfo, QuestionList } from "./styles";
+import { Container, HeaderContent, MainContent, RoomTitle, FormFooter, UserInfo, QuestionList, LogOutButton } from "./styles";
 
 import logoImg from '../../assets/logo.svg'
 import { Button } from "../../components/Button";
@@ -9,6 +9,7 @@ import { useAuth } from "../../hooks/useAuth";
 import { database } from "../../services/firebase";
 import { Question } from "../../components/Question";
 import { useRoom } from "../../hooks/useRoom";
+import { RiLogoutCircleRLine } from 'react-icons/ri'
 
 
 
@@ -19,7 +20,7 @@ type RoomParams = {
 }
 
 export function Room() {
-  const { user } = useAuth()
+  const { user, signOut } = useAuth()
   const params = useParams<RoomParams>()
   const [newQuestion, setNewQuestion] = useState('')
   const roomId = params.id
@@ -64,7 +65,14 @@ export function Room() {
       <header>
         <HeaderContent>
           <img src={logoImg} alt="Logo" />
-          <RoomCode code={roomId} />
+          <div>
+            <RoomCode code={roomId} />
+            {user && (
+              <LogOutButton type="button" onClick={signOut}>
+                <RiLogoutCircleRLine />
+              </LogOutButton>
+            )}
+          </div>
         </HeaderContent>
       </header>
       <MainContent>
