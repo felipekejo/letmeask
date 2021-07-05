@@ -7,6 +7,22 @@ border-radius:8px;
 box-shadow: 0 2px 12px rgba(0,0,0,0.4);
 padding:24px;
 
+
+
+&.highlighted{
+  background:#f4f0ff;
+  border:1px solid #835afd;
+
+  span{
+    color:#29292e;
+  }
+}
+
+&.answered{
+  background:#dbdcdd;
+
+}
+
 & + div {
   margin-top:8px;
 }
@@ -18,7 +34,7 @@ footer{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  margin-bottom:24px;
+  margin-top:24px;
 
   button{
     border:0;
@@ -50,6 +66,7 @@ footer{
 export const UserInfo = styled.div`
 display: flex;
 align-items:center;
+
 img{
   width:32px;
   height:32px;
@@ -60,4 +77,8 @@ span{
   color:#737380;
   font-size:14px;
 }
+`
+export const ButtonsContainer = styled.div`
+display:flex;
+gap:16px;
 `
