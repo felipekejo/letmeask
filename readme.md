@@ -20,9 +20,17 @@
 
 This project was developed with the following technologies:
 
-- [React](https://reactjs.org)
-- [Firebase](https://firebase.google.com/)
-- [TypeScript](https://www.typescriptlang.org/)
+<div align="center">
+  <a href="https://pt-br.reactjs.org/">
+    <img alt="React" src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"/>
+  </a>
+  <a href="https://firebase.google.com/">
+  <img alt="Firebase" src="https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase"/>
+  </a>
+  <a href="https://www.typescriptlang.org/">
+  <img alt="TypeScript" src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white"/>
+  </a>
+</div>
 
 ## 🚀 How to run the project
 
